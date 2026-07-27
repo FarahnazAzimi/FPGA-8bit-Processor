@@ -44,3 +44,23 @@ The processor consists of the following modules:
 - Instruction Decoder
 
 All modules communicate through an internal 8-bit data bus.
+
+            +----------------+
+            | Program Memory |
+            +----------------+
+                    |
+                    |
+           +-----------------+
+           | Instruction Reg |
+           +-----------------+
+                    |
+          +-------------------+
+          |   Control Unit    |
+          +-------------------+
+          |                   |
+    +-----------+      +-------------+
+    | Register  |<---->|     ALU     |
+    |   File    |      +-------------+
+    +-----------+
+          |
+     Data Memory
